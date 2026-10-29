@@ -31,21 +31,30 @@
         <button type="button">+ Add Plant</button>
         </section>
 
-        <section class = "plant-dashboard">
+     <section class = "plant-dashboard" id="my-plant">
             <h2 id="greeting">Welcome!</h2>
             <p>Here's how your plant is doing today.</p>
-            <div class="plant-info">
+
+        <div class="plant-info">
                 <h3>Peperomia</h3>
                 <p>Peperomia obtusifolia</p>
-            </div>
-            <ul class="plant-care">
+
+                <ul class="plant-care">
                 <li>Indoor</li>
                 <li>Bright, Indirect Light</li>
                 <li>Let Soil Partially Dry</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <section class="moisture-card" id="moisture-card">
+        <h2 id="moisture-heading">Current Soil Moisture</h2>
+        <p id="moisture-value">--%</p>
+        <p id="moisture-status">Waiting for sensor data...</p>
+        <button type="button" id="water-now">Water Now</button>
+    </section>
+
+</main>
 
 </body>
 </html>
