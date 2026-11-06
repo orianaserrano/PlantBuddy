@@ -43,3 +43,81 @@ header nav a {
     text-decoration: none;
     color: var(--ink);
 }
+
+.plant-selector {
+    background-color: var(--forest);
+    color: var(--cream);
+    padding: 30px 20px;
+    border-radius: 50px;
+}
+
+.plant-selector h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.plant-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plant-list li {
+    margin-bottom: 15px;
+}
+
+.plant-list button {
+    background: transparent;
+    color: var(--cream);
+    border: none;
+    padding: 12px 15px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.plant-list button:hover {
+    background-color: var(--citrus);
+    color: var(--ink);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.plant-selector{
+    grid-column: 1;
+}
+
+.plant-dashboard{
+    grid-column: 2;
+}
+
+.moisture-card{
+    grid-column: 3;
+}
+
+.history{
+    grid-column: 1/4;
+}
+
+.history-insight{
+    grid-column: 3;
+}
+
+.watering-mode {
+    grid-column: 1 / 4;
+}
+
+.activity {
+    grid-column: 1 / 3;
+}
+
+.device-status {
+    grid-column: 3;
+}
