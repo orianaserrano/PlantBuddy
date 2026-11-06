@@ -1,0 +1,45 @@
+:root {
+    --forest: #103D27;
+    --citrus: #E8E85B;
+    --cream: #F7F0E5;
+    --peach: #F5C7B9;
+    --ink: #092D1C;
+    --olive: #7E9B50;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--ink);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header h1{
+    font-size: 2em;
+    color: var(--ink);
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--ink);
+}
