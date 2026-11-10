@@ -106,8 +106,10 @@ main{
     grid-column: 1/4;
 }
 
-.history-insight{
-    grid-column: 3;
+.history-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
 }
 
 .watering-mode {
