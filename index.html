@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlantBuddy | Smart Plant Care</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Mono:wght@300;400;500&family=Special+Elite&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="page-layout">
+        <section class="plant-selector">
+            <h2>Your Plants</h2>
+            <ul class="plant-list">
+            <li><button type="button">Peperomia</button></li>
+            <li><button type="button">Pothos</button></li>
+            <li><button type="button">Snake Plant</button></li>
+        </ul>
+        <img src="images/Sidebar-image.png" alt="Illustration of an animated watering pot" class="sidebar-image">
+        </section>
+
     <header>
         <h1>PlantBuddy</h1>
         <nav aria-label="Main Navigation">
@@ -21,19 +37,11 @@
     </header>
 
     <main>
-        <section class="plant-selector">
-            <h2>Your Plants</h2>
-            <ul class="plant-list">
-            <li><button type="button">Peperomia</button></li>
-            <li><button type="button">Pothos</button></li>
-            <li><button type="button">Snake Plant</button></li>
-        </ul>
-        <button type="button">+ Add Plant</button>
-        </section>
 
      <section class = "plant-dashboard" id="my-plant">
             <h2 id="greeting">Welcome!</h2>
             <p>Here's how your plant is doing today.</p>
+            <img src="images/main-image.png" alt="Peperomia Plant" class="plant-image">
 
         <div class="plant-info">
                 <h3>Peperomia</h3>
@@ -74,19 +82,31 @@
     </section>
 
     <section class="watering-mode" id="watering-mode">
+
         <h2>Watering Mode</h2>
+        <img src="images/Smiling-Raindrop.png" alt="Illustration">
         <div class="watering-content">
         <fieldset class="watering-options">
     <legend>Choose a watering mode</legend>
 
     <label class="mode-card">
         <input type="radio" name="watering-mode" value="manual" checked>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	    <path d="M0 0h24v24H0z" fill="none" />
+	    <path fill="#103d27" d="M18.5 7.47c-.74.73-.93 1.78-.58 2.68L15 13.07V11c0-.55-.45-1-1-1h-1.03c.03-.17.03-.33.03-.5C13 6.46 10.54 4 7.5 4A5.497 5.497 0 0 0 4 13.74V20c0 .55.45 1 1 1h9c.55 0 1-.45 1-1v-4.11l4.33-4.33c.9.35 1.95.17 2.67-.56zM4.05 10C4.03 9.83 4 9.67 4 9.5C4 7.57 5.57 6 7.5 6S11 7.57 11 9.5c0 .17-.03.33-.05.5M13 19H6v-7h7z" />
+        </svg>
+
         <strong>Manual</strong>
         <span>I'll tell you when she's thirsty.</span>
     </label>
 
     <label class="mode-card">
         <input type="radio" name="watering-mode" value="auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	    <path d="M0 0h24v24H0z" fill="none" />
+	    <path fill="#103d27" d="M12.275 19q.3-.025.513-.238T13 18.25q0-.35-.225-.562T12.2 17.5q-1.025.075-2.175-.562t-1.45-2.313q-.05-.275-.262-.45T7.825 14q-.35 0-.575.263t-.15.612q.425 2.275 2 3.25t3.175.875m-5.987.65Q4 17.3 4 13.8q0-2.5 1.988-5.437T12 2q4.025 3.425 6.013 6.363T20 13.8q0 3.5-2.287 5.85T12 22t-5.712-2.35M16.3 18.238Q18 16.475 18 13.8q0-1.825-1.513-4.125T12 4.65Q9.025 7.375 7.513 9.675T6 13.8q0 2.675 1.7 4.438T12 20t4.3-1.763M12 12" />
+        </svg>
+
         <strong>Auto</strong>
         <span>Sit back, I'll handle it.</span>
     </label>
@@ -124,6 +144,9 @@
 </section>
 
 </main>
+</div>
+
+
 
 </body>
 </html>
