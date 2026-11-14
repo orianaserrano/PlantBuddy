@@ -72,7 +72,7 @@ header nav a {
     align-self: start;
     background-color: var(--forest);
     color: var(--cream);
-    padding: 30px 20px;
+    padding: 80px 30px;
     border-radius: 70px;
     font-family: var(--font-accent);
 }
@@ -80,6 +80,7 @@ header nav a {
 .plant-selector h2 {
     font-size: 20px;
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .plant-list {
@@ -111,32 +112,122 @@ header nav a {
 }
 
 main{
-    grid-column: 2;
-    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 
 .plant-dashboard{
     grid-column: 1;
+    justify-self: center;
+    align-self: start;
+    width: 100%;
+    max-width: 700px;
+    transform: translateX(100px);
+
 }
+
+.moisture-card {
+    transform: translateY(40px);
+}
+
+
 
 .plant-image{
     display: block;
-    width: 250px;
+    width: 400px;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
+}
+
+.plant-care {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.plant-care li {
+    border: 1.5px solid var(--forest);
+    border-radius: 50px;
+    padding: 20px 18px;
+    font-family: var(--font-heading);
+    font-size: 13px;
+}
+
+.plant-info h3{
+    font-family: var(--font-heading);
+    font-size: 30px;
+    text-align: center;
+}
+
+.plant-info p{
+    font-family: var(--font-body);
+    font-size: 16px;
+    text-align: center;
 }
 
 .plant-dashboard h2{
     font-family: var(--font-heading);
+    font-size: 50px;
+    margin: 10px 0 20px;
 }
+
 
 .moisture-card{
     grid-column: 2;
+    background-color: var(--citrus);
+    border: 1.5px solid var(--forest);
+    border-radius: 30px;
+    padding: 30px;
+    align-self: start;
+    aspect-ratio: 1 / 1;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: end;
+}
+
+.moisture-card h2{
+    font-family: var(--font-heading);
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+
+#moisture-value {
+    font-family: var(--font-heading);
+    font-size: 72px;
+    color: var(--forest);
+    margin: 20px 0;
+    line-height: 1;
+}
+
+#moisture-status {
+    text-align: center;
+    margin: 15px 0 20px;
+    font-family: var(--font-heading);
+}
+
+#water-now {
+    background-color: var(--forest);
+    color: var(--cream);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 50px;
+    font-family: var(--font-heading);
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#water-now:hover {
+    background-color: var(--ink);
 }
 
 .history{
