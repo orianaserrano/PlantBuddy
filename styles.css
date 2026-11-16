@@ -243,7 +243,8 @@ main{
 .history h2 {
     font-family: var(--font-heading);
     color: var(--citrus);
-     -webkit-text-stroke: 1px var(--forest);
+     -webkit-text-stroke: 20px var(--forest);
+     paint-order: stroke fill;
      font-size: 80px;
     margin-top: -30px;
 }
@@ -261,13 +262,30 @@ main{
 
 .watering-mode {
     grid-column: 1 / -1;
+    position: relative;
     border: 2px solid var(--forest);
     border-radius: 30px;
     padding: 30px;
+    margin-top: 90px;
 }
 
+.watering-mode img {
+    position: absolute;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    top: -100px;
+    left: 50px;
+}
 .watering-mode h2 {
     font-family: var(--font-heading);
+    color: var(--cream);
+    -webkit-text-stroke: 20px var(--forest);
+    paint-order: stroke fill;
+    font-size: 80px;
+    text-align: center;
+    margin: 0 0 30px;
+
 }
 
 .activity {
@@ -289,21 +307,34 @@ main{
 .watering-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 100px;
+    max-width: 800px;
+    margin: 0 auto;
     border: none;
     padding: 0;
-    margin: 0;
 }
 
 .mode-card{
-    padding: 30px;
+    padding: 20px;
     border: 1.5px solid var(--forest);
     border-radius: 30px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    position: relative;
 }
 
 .mode-card:has(input:checked) {
     background-color: var(--citrus);
+    box-shadow: -12px 12px 0 var(--forest);
+}
+
+.mode-card input[type="radio"] {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    accent-color: var(--forest);
+    transform: scale(1.5);
+
 }
 
 .mode-card strong{
@@ -332,4 +363,11 @@ main{
     height: 70px;
     color: var(--forest);
     margin: 15px auto;
+}
+
+.watering-options legend{
+    font-family: var(--font-body);
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
